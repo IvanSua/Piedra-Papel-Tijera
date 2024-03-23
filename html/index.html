@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijeras</title>
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="titulo-principal">
+            <h1>PIEDRA PAPEL O TIJERAS</h1>
+        </div>
+    </header>
+    <div class="puntuacion">
+        <div class="puntuacion-contenedor">
+            <span class="usuario">Tu</span>
+            <span id="puntuacion"></span>
+            <span class="pc">PC</span>
+        </div>
+    </div>
+    <div class="botones">
+        <button id="papel" class="bn" onclick="juego(this.value)" value="papel"><i class="far fa-hand-paper"></i></button>
+        <button id="roca" class="bn" onclick="juego(this.value)" value="roca"><i class="far fa-hand-rock"></i></button>
+        <button id="tijera" class="bn" onclick="juego(this.value)" value="tijera"><i class="far fa-hand-scissors"></i></button>
+    </div>
+    <div id="desafio">
+        <div id="tu">
+            <div id="tu-objeto"></div>
+            <div class="quien">Tu</div>
+        </div>
+        <div id="resultado">
+            <p id="quien"></p>
+        </div>
+        <div id="pc">
+            <div id="pc-objeto"></div>
+            <div class="quien">PC</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
